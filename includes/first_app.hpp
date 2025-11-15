@@ -1,6 +1,7 @@
 #pragma once
 
 #include "vmge_window.hpp"
+#include "vmge_pipeline.hpp"
 
 namespace vmge
 {
@@ -14,5 +15,6 @@ namespace vmge
 
     private:
       VmgeWindow vmgeWindow{WIDTH, HEIGHT, "Hello Vulkan!"};
+      VmgePipeline vmgePipeline{"./shaders/simple_shader.vert.spv", "./shaders/simple_shader.frag.spv"};
   };
 };
